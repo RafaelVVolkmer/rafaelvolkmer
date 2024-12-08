@@ -1,53 +1,82 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Oskar Wickström" />
-  <meta name="dcterms.date" content="2024-08-26" />
-  <title>The Monospace Web</title>
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>RafaelVVolkmer.dev</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Estilos específicos para o cabeçalho */
+    .header {
+      background-color: var(--background-color); /* Usa a variável para o fundo */
+      color: var(--text-color); /* Usa a variável para o texto */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: calc(var(--line-height) * 2);
+    }
+    .title {
+      margin: 0;
+      font-size: 2em;
+      padding-left: 20px;
+    }
+    .subtitle {
+      margin: 5px 0 0 20px;
+      font-size: 1.2em;
+      color: var(--text-color);
+    }
+
+    /* Responsividade para o cabeçalho */
+    @media (max-width: 600px) {
+      .header {
+        padding: 10px;
+      }
+      .title {
+        font-size: 1.5em;
+        padding-left: 10px;
+      }
+      .subtitle {
+        font-size: 1em;
+        padding-left: 10px;
+      }
+    }
+
+    /* Garantir que outros elementos não interfiram no cabeçalho */
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <body>
-<table class="header">
-  <tr>
-    <td colspan="2" rowspan="2" class="width-auto">
-      <h1 class="title">The Monospace Web</h1>
-      <span class="subtitle">A minimalist design exploration</span>
-    </td>
-    <th>Version</th>
-    <td class="width-min">v0.1.1</td>
-  </tr>
-  <tr>
-    <th>Updated</th>
-    <td class="width-min"><time style="white-space: pre;">2024-08-26</time></td>
-  </tr>
-  <tr>
-    <th class="width-min">Author</th>
-    <td class="width-auto"><a href="https://wickstrom.tech"><cite>Oskar
-Wickström</cite></a></td>
-    <th class="width-min">License</th>
-    <td>MIT</td>
-  </tr>
-</table>
-<label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
-<nav id="TOC" role="doc-toc">
-<h2 id="toc-title">Contents</h2>
-<ul class="incremental">
-<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
-<li><a href="#the-basics" id="toc-the-basics">The Basics</a></li>
-<li><a href="#lists" id="toc-lists">Lists</a></li>
-<li><a href="#tables" id="toc-tables">Tables</a></li>
-<li><a href="#forms" id="toc-forms">Forms</a></li>
-<li><a href="#grids" id="toc-grids">Grids</a></li>
-<li><a href="#ascii-drawings" id="toc-ascii-drawings">ASCII
-Drawings</a></li>
-<li><a href="#media" id="toc-media">Media</a></li>
-<li><a href="#discussion" id="toc-discussion">Discussion</a></li>
-</ul>
-</nav>
+  <header class="header">
+    <h1 class="title">Rafael Vinicius Volkmer da Silva</h1>
+    <span class="subtitle">Software Developer | Embedded Systems | Electronics Technician</span>
+  </header>
+
+  <label class="debug-toggle-label">
+    <input type="checkbox" class="debug-toggle"> Debug mode
+  </label>
+  
+  <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+    <ul class="incremental">
+      <li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+      <li><a href="#the-basics" id="toc-the-basics">The Basics</a></li>
+      <li><a href="#lists" id="toc-lists">Lists</a></li>
+      <li><a href="#tables" id="toc-tables">Tables</a></li>
+      <li><a href="#forms" id="toc-forms">Forms</a></li>
+      <li><a href="#grids" id="toc-grids">Grids</a></li>
+      <li><a href="#ascii-drawings" id="toc-ascii-drawings">ASCII Drawings</a></li>
+      <li><a href="#media" id="toc-media">Media</a></li>
+      <li><a href="#discussion" id="toc-discussion">Discussion</a></li>
+    </ul>
+  </nav>
 <h2 id="introduction">Introduction</h2>
 <p>Monospace fonts are dear to many of us. Some find them more readable,
 consistent, and beautiful, than their proportional alternatives. Maybe
