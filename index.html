@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
@@ -8,33 +9,57 @@
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="index.css" />
   <style>
+    /* Estilos para a tabela de cabeçalho */
+    .header {
+      width: 100%;
+      background-color: #333; /* Cor de fundo da tabela (ajuste conforme necessário) */
+      color: white; /* Cor padrão do texto na tabela */
+      border-collapse: collapse; /* Remove espaços entre células */
+    }
     .header td {
-      text-align: left;
-      padding-left: 20px;
-      vertical-align: top;
+      text-align: left; /* Alinha o conteúdo à esquerda */
+      padding: 20px; /* Padding para espaçamento interno */
+      vertical-align: top; /* Alinha verticalmente no topo */
     }
     .title {
-      margin: 0;
+      margin: 0; /* Remove margens padrão */
+      font-size: 2em; /* Aumenta o tamanho da fonte do título */
     }
     .subtitle {
-      display: block;
-      margin-top: 5px;
-      font-size: 1em;
-      color: #555;
+      display: block; /* Garante que ocupe a linha inteira */
+      margin-top: 10px; /* Espaçamento entre título e subtítulo */
+      font-size: 1.2em; /* Ajusta o tamanho da fonte */
+      color: white; /* Define a cor do texto das profissões para branco */
+    }
+    /* Ajustes adicionais para responsividade */
+    @media (max-width: 600px) {
+      .header td {
+        padding: 10px;
+      }
+      .title {
+        font-size: 1.5em;
+      }
+      .subtitle {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
   <table class="header">
     <tr>
-      <td class="width-auto">
+      <td colspan="1" class="width-auto">
         <h1 class="title">Rafael Vinicius Volkmer da Silva</h1>
       </td>
+    </tr>
+    <tr>
       <td class="width-auto">
         <span class="subtitle">Software Developer | Embedded Systems | Electronics Technician</span>
       </td>
     </tr>
   </table>
+
+  <label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
 
   
   <nav id="TOC" role="doc-toc">
